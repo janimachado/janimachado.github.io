@@ -1,0 +1,17 @@
+Font do projeto Nunito
+Encontre seu Pokemon = 18px, regular
+Input = 18px, bold
+Pikachu = 36px, bold
+Número do peso e altura = 24px, bold
+Número do hp = 30px, bold
+labels (HP) = 14px, regular
+tipo = 14px, bold
+made with  = 16px regular
+
+
+
+cores
+bg = BFD9FF
+primary = 27425B
+surface = E9ECEF
+confirm = 6CC56A

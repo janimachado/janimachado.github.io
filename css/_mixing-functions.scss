@@ -1,0 +1,18 @@
+$root-font-size: 16px;
+@function pxToRem($px) {
+    @return #{$px / $root-font-size}rem;
+}
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}

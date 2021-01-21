@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <main>
+            <div class="container">
+                <form class="search-form" id="search-form" autocomplete="off">
+                    <div class="search-form__group">
+                        <label class="search-form__label" for="search-form-input" id="search-form-label">Encontre seu Pokemón</label>
+                        <input aria-owns="suggestion-list" aria-haspopup="true" aria-autocomplete="list" aria-expanded="false" role="combobox" class="search-form__input" id="search-form-input" type="text">
+                        <span class="search-form--error-msg">Escolha seu Pokemón!</span>
+                    </div>
+                    <div class="search-form__wrap-btn">
+                        <button class="search-form__btn" type="submit" aria-label="Pesquisar Pokemón">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </button>
+                    </div>
+                </form>
+                <div id="suggestion" class="suggestion">
+                    <ul role="listbox" id="suggestion-list" class="suggestion__list"></ul>
+                </div>
+                <div id="loader" class="loader">
+                    <div class="lds-dual-ring"></div>
+                </div>
+                <div id="error" class="error"></div>
+                <div id="card" class="card">
+                    <div class="card__img">
+                        <img id="card-img" class="poke-img" src="" alt="">
+                    </div>
+                    <div id="card-name" class="card__name"></div>
+                    <div class="card__data">
+                        <div class="card__data-wrap">
+                            <span class="card__value">
+                                <span id="card-height"></span><small>m</small>
+                            </span>
+                            <span class="card__attribute">
+                                ALTURA 
+                            </span>
+                        </div>
+                        <div class="card__data-wrap card__data--hp">
+                            <span id="card-hp" class="card__value card__value--hp">
+                                 
+                            </span>
+                            <span class="card__attribute">
+                                 HP
+                            </span>
+                        </div>
+                        <div class="card__data-wrap">
+                            <span class="card__value">
+                                <span id="card-weight"></span><small>kg</small>
+                            </span>
+                            <span class="card__attribute">
+                                PESO
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card__type-wrap">
+                        <ul id="card-type" class="type-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>Made with love by <a href=" https://github.com/janimachado?tab=repositories " target="_blank ">Jani Machado</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js "></script>
+</body>
+
+</html>

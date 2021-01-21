@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: $bg;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+hr {
+    border: 1px solid $surface;
+    width: 80%;
+}
+
+.page {
+    padding-top: 50px;
+    padding-bottom: 54px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: pxToRem(380px);
+    padding-left: pxToRem(15px);
+    padding-right: pxToRem(15px);
+}
+
+.error {
+    display: none;
+    color: $primary;
+    font-weight: 700;
+    text-align: center;
+    font-size: pxToRem(20px);
+    margin-top: pxToRem(20px);
+}
+
+.error--active {
+    display: block;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    display: none;
+    justify-content: center;
+    margin-top: pxToRem(20px);
+    margin-bottom: pxToRem(20px);
+}
+
+.loader--active {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: $hint;
+    border-radius: 10px;
+}

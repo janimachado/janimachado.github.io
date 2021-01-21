@@ -1,0 +1,66 @@
+$input-height: 50px;
+.search-form {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.search-form__label {
+    font-size: pxToRem(18px);
+}
+
+.invalid-input {
+    input {
+        border: 1px solid red;
+        &:hover {
+            border: 2px solid red;
+        }
+    }
+}
+
+.search-form__group--invalid .search-form--error-msg {
+    display: block;
+}
+
+.search-form--error-msg {
+    color: $error;
+    font-size: pxToRem(14px);
+    display: none;
+    font-weight: 700;
+    margin-top: pxToRem(20px);
+}
+
+.search-form__input {
+    height: $input-height;
+    width: 100%;
+    border-radius: $input-height / 2;
+    border: none;
+    box-shadow: pxToRem(1px) pxToRem(5px) pxToRem(15px) pxToRem(2px) #adadad;
+    font-size: pxToRem(18px);
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.search-form__wrap-btn {
+    position: absolute;
+    top: 49px;
+    right: 4px;
+}
+
+.search-form__group {
+    text-align: center;
+}
+
+.search-form__btn {
+    background-color: $confirm;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    width: 40px;
+    svg {
+        fill: white;
+    }
+}

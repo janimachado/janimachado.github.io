@@ -1,0 +1,106 @@
+.card {
+    background-color: white;
+    border: 10px solid $surface;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 5px;
+    box-shadow: pxToRem(1px) pxToRem(5px) pxToRem(15px) pxToRem(2px) #adadad;
+    display: none;
+}
+
+.card--active {
+    display: flex;
+}
+
+.card__name {
+    margin-top: pxToRem(20px);
+    background-color: $surface;
+    width: 94%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card__data {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card__data-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.33%;
+    justify-content: start;
+    align-items: center;
+}
+
+.card__data--hp {
+    position: relative;
+    top: -24px;
+}
+
+.card__value {
+    font-size: pxToRem(24px);
+    font-weight: bold;
+}
+
+.card__value--hp {
+    font-size: pxToRem(30px);
+    width: pxToRem(64px);
+    height: pxToRem(64px);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: pxToRem(0px) pxToRem(2px) pxToRem(15px) pxToRem(0px) #adadad;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.card__attribute {
+    font-size: 14px;
+    color: #afb1b3;
+    text-align: center;
+    font-weight: 700;
+}
+
+.poke-img {
+    width: 100px;
+}
+
+.card__type-wrap {
+    display: flex;
+    padding: 15px;
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.card__type {
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    text-align: center;
+    margin-right: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+$types: ( 'grass': #7c5, 'poison': #a59, 'normal': #aa9, 'fire': #f42, 'water': #39f, 'electric': #fc3, 'ice': #6cf, 'figthing': #b54, 'ground': #db5, 'flying': #89f, 'psychic': #f59, 'bug': #ab2, 'rock': #ba6, 'ghost': #66b, 'dragon': #76e, 'dark': black, 'steel': #aab, 'fairy': #e9e);
+@each $type,
+$color in $types {
+    .card__type--#{$type} {
+        background-color: #{$color};
+    }
+}

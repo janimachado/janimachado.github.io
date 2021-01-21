@@ -1,0 +1,49 @@
+.suggestion__item {
+    cursor: pointer;
+    &:hover {
+        background-color: #ededed;
+    }
+}
+
+.suggestion__name {
+    background-color: #ededed;
+    border-radius: pxToRem(4px);
+}
+
+.suggestion {
+    position: relative;
+}
+
+.suggestion__list {
+    display: none;
+    margin-block-start: pxToRem(8px);
+    background-color: white;
+    border-radius: pxToRem(10px);
+    padding: pxToRem(5px) pxToRem(10px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 150px;
+    box-shadow: pxToRem(1px) pxToRem(5px) pxToRem(15px) pxToRem(2px) #adadad;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    font-size: pxToRem(18px);
+    font-weight: 700;
+    z-index: 1;
+    li {
+        border-bottom: 2px solid $surface;
+        padding: 5px;
+        color: $hint;
+        font-weight: 400;
+        strong {
+            color: $primary;
+        }
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+}
+
+.suggestion--active {
+    display: block;
+}

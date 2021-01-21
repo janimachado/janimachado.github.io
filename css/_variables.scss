@@ -1,0 +1,22 @@
+/* Media */
+
+$md: 768px;
+$sm: 576px;
+$lg: 992px;
+$xl: 1200px;
+
+/* Colors */
+
+$bg:#BFD9FF;
+$primary:#223a50;
+$hint: #737278;
+$surface:#E9ECEF;
+$confirm:#6CC56A;
+$error: rgb(250, 51, 51);
+$colors: ( bg: $bg, primary: $primary, surface: $surface, confirm: $confirm, hint: $hint, error: $error);
+@each $color,
+$value in $colors {
+    .#{$color} {
+        color: #{$value};
+    }
+}

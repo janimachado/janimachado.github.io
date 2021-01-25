@@ -1,9 +1,9 @@
 /* Media */
 
-$md: 768px;
-$sm: 576px;
-$lg: 992px;
-$xl: 1200px;
+$md: pxToRem(768px);
+$sm: pxToRem(576px);
+$lg: pxToRem(992px);
+$xl: pxToRem(1200px);
 
 /* Colors */
 

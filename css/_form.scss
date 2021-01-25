@@ -13,7 +13,7 @@ $input-height: 50px;
     input {
         border: 1px solid red;
         &:hover {
-            border: 2px solid red;
+            border: pxToRem(2px) solid red;
         }
     }
 }
@@ -46,8 +46,8 @@ $input-height: 50px;
 
 .search-form__wrap-btn {
     position: absolute;
-    top: 49px;
-    right: 4px;
+    top: pxToRem(49px);
+    right: pxToRem(4px);
 }
 
 .search-form__group {
@@ -56,10 +56,10 @@ $input-height: 50px;
 
 .search-form__btn {
     background-color: $confirm;
-    border-radius: 20px;
+    border-radius: pxToRem(20px);
     border: none;
-    padding: 7px;
-    width: 40px;
+    padding: pxToRem(7px);
+    width: pxToRem(40px);
     svg {
         fill: white;
     }

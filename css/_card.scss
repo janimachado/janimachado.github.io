@@ -1,11 +1,11 @@
 .card {
     background-color: white;
-    border: 10px solid $surface;
-    border-radius: 20px;
+    border: pxToRem(10px) solid $surface;
+    border-radius: pxToRem(20px);
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    padding: 10px 5px;
+    margin-top: pxToRem(20px);
+    padding: pxToRem(10px) pxToRem(5px);
     box-shadow: pxToRem(1px) pxToRem(5px) pxToRem(15px) pxToRem(2px) #adadad;
     display: none;
 }
@@ -18,16 +18,16 @@
     margin-top: pxToRem(20px);
     background-color: $surface;
     width: 94%;
-    border-radius: 10px;
+    border-radius: pxToRem(10px);
     text-align: center;
-    padding: 5px;
-    font-size: 36px;
+    padding: pxToRem(5px);
+    font-size: pxToRem(36px);
     font-weight: bold;
 }
 
 .card__data {
     display: flex;
-    margin-top: 20px;
+    margin-top: pxToRem(20px);
     justify-content: space-around;
     width: 100%;
 }
@@ -42,7 +42,7 @@
 
 .card__data--hp {
     position: relative;
-    top: -24px;
+    top: pxToRem(-24px);
 }
 
 .card__value {
@@ -64,19 +64,19 @@
 }
 
 .card__attribute {
-    font-size: 14px;
+    font-size: pxToRem(14px);
     color: #afb1b3;
     text-align: center;
     font-weight: 700;
 }
 
 .poke-img {
-    width: 100px;
+    width: pxToRem(100px);
 }
 
 .card__type-wrap {
     display: flex;
-    padding: 15px;
+    padding: pxToRem(15px);
     ul {
         display: flex;
         list-style: none;
@@ -87,12 +87,12 @@
 
 .card__type {
     color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-bottom: 2px;
-    font-size: 13px;
+    border-radius: pxToRem(5px);
+    padding: pxToRem(5px) pxToRem(10px);
+    margin-bottom: pxToRem(2px);
+    font-size: pxToRem(13px);
     text-align: center;
-    margin-right: 5px;
+    margin-right: pxToRem(5px);
     font-weight: 700;
     text-transform: uppercase;
 }

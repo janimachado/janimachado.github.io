@@ -22,7 +22,7 @@
     padding: pxToRem(5px) pxToRem(10px);
     overflow-y: scroll;
     overflow-x: hidden;
-    max-height: 150px;
+    max-height: pxToRem(150px);
     box-shadow: pxToRem(1px) pxToRem(5px) pxToRem(15px) pxToRem(2px) #adadad;
     position: absolute;
     width: 100%;
@@ -31,7 +31,7 @@
     font-weight: 700;
     z-index: 1;
     li {
-        border-bottom: 2px solid $surface;
+        border-bottom: pxToRem(2px) solid $surface;
         padding: 5px;
         color: $hint;
         font-weight: 400;

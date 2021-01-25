@@ -21,13 +21,13 @@ footer {
 }
 
 hr {
-    border: 1px solid $surface;
+    border: pxToRem(1px) solid $surface;
     width: 80%;
 }
 
 .page {
-    padding-top: 50px;
-    padding-bottom: 54px;
+    padding-top: pxToRem(50px);
+    padding-bottom: pxToRem(54px);
     position: relative;
     min-height: 100vh;
 }
@@ -54,18 +54,18 @@ hr {
 
 .lds-dual-ring {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: pxToRem(80px);
+    height: pxToRem(80px);
 }
 
 .lds-dual-ring:after {
     content: " ";
     display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
+    width: pxToRem(64px);
+    height: pxToRem(64px);
+    margin: pxToRem(8px);
     border-radius: 50%;
-    border: 6px solid #fff;
+    border: pxToRem(6px) solid #fff;
     border-color: #fff transparent #fff transparent;
     animation: lds-dual-ring 1.2s linear infinite;
 }
@@ -91,14 +91,14 @@ hr {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: pxToRem(10px);
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: pxToRem(10px);
 }
 
  ::-webkit-scrollbar-thumb {
     background: $hint;
-    border-radius: 10px;
+    border-radius: pxToRem(10px);
 }

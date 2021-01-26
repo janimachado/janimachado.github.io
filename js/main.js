@@ -187,7 +187,7 @@ function searchPokemon(e) {
             if (height.length === 1) {
                 cardHeight.innerText = "0." + pokemonObj.height;
             } else {
-                cardHeight.innerText = pokemonObj.height;
+                cardHeight.innerText = pokemonObj.height / 10;
             }
 
             cardName.innerText = capitalizeFirstLetter(pokemonObj.name);

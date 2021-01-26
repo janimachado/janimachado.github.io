@@ -95,7 +95,7 @@ const onInputSearchForm = debounce(() => {
         setFormTo('valid');
         if (suggestionNames.length < 1) {
             removeSuggestions();
-            errorSearch.innerHTML = 'Ops ! Parece que ' + inputValue + ' não existe<br>:(';
+            errorSearch.innerHTML = "Ops ! " + inputValue + " doesn't exist <br>:(";
             errorSearch.classList.add('error--active');
         }
         return;
@@ -131,7 +131,7 @@ const onInputSearchForm = debounce(() => {
 
     } else {
         removeSuggestions();
-        errorSearch.innerHTML = 'Ops ! Parece que ' + inputValue + ' não existe<br>:(';
+        errorSearch.innerHTML = "Ops ! " + inputValue + " doesn't exist <br>:(";
         errorSearch.classList.add('error--active');
     }
 }, 500);

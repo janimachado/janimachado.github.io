@@ -197,7 +197,8 @@ function searchPokemon(e) {
                 cardImg.src = "img/pokeball.png";
             }
             cardHp.innerText = pokemonObj.stats[0].base_stat;
-            cardWeight.innerText = pokemonObj.weight;
+
+            cardWeight.innerText = pokemonObj.weight / 10;
         })
         .catch(err => {
             loaderDisplay('hide');

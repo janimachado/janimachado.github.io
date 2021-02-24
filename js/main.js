@@ -291,5 +291,4 @@
     searchForm.addEventListener('submit', searchPokemon)
 
     getAllPokemonNames();
-    s
 })();

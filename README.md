@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/janimachado/janimachado.github.io/master/img/Pokemon.png"></img>
 
-## Hey coach! Learn a little more about your pokemon <a href="https://janimachado.github.io/">here</a>. :heart:
+## Hey coach! Learn a little more about your pokemon <a href="https://janimachado.github.io/" target="_blank">here</a>. :heart:
 
 ### Application made with vanilla JS using the API https://pokeapi.co/ 
 
